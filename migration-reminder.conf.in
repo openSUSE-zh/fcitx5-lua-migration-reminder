@@ -1,6 +1,6 @@
 [Addon]
 Name=migration-reminder
-Comment=Reminder to migrate from Fcitx4 to Fcitx5
+Comment=Reminder to migrate Fcitx4 configuration data to Fcitx5
 Category=Module
 Type=Lua
 OnDemand=False
