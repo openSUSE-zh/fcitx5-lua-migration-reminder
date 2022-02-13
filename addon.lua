@@ -13,12 +13,14 @@ function migrate4to5(sym, state, release)
   local reminder = "lua " .. path .. "reminder.lua"
   local f = io.open(xdg_config_home .. "/fcitx/config", "r")
   if f == nil then
-    f.close()
     return false
+  else
+    io.close(f)
   end
+
   f = io.open(xdg_config_home .. "/fcitx/.migration-complete", "r")
   if f ~= nil then
-    f.close()
+    io.close(f)
     return false
   end
 
